@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Ini merupakan judul dari dokumen HTML
         </title>
         <style>
+            /*class*/
             .red{color: red;}
             .skyblue{background-color: skyblue;}
             .fancy{
                 font-weight: bold;
                 text-shadow: 4px 4px 3px #77f;
             }
+            /*another class*/
             p.fancy{text-shadow: 4px 4px 3px #00c8eb;}
+
+            /*id slector*/
+            #special{color: cadetblue;}
+            #untukspan{background-color: darksalmon;}
+
+            /*attribute selector*/
+            /*elemen <a> dengan atribut href*/
+            a[href]{color: blueviolet;}
+            /*elemen yang menerapkan nilai pada href dengan awalan #*/
+            a[href^="#"]{background-color: gold;}
+            /*elemen <a> menerapkan nilai pada href yang menangandung teks'example'*/
+            a[href*="example"]{background-color: silver;}
+            /*elemen <a> menerapkan nilai pada href yang mengandung teks 'isensitive' dan tidak mementingkan huruf kapital*/
+            a[href*="insensitive" i]{color: cyan}
+            /*elemen yang menerapkan nilai pada href dengan akhiran .org*/
+            a[href$=".org"]{color: red;}
+
+
         </style>
 
     </head>
@@ -29,16 +49,41 @@
             </ul>
         </nav>
         <ul>
-            <li><a href="#sejarah">Sejarah</a></li>
-            <li><a href="#geografis">Geografis</a></li>
-            <li><a href="#wisata">Wisata</a></li>
+            <li><a href="sejarah">Sejarah</a></li>
+            <li><a href="geografis">Geografis</a></li>
+            <li><a href="wisata">Wisata</a></li>
         </ul>
-
+        <!--class-->
         <p class="red">paragraf dengan teks berwarna merah</p>
         <p class="skyblue">paragraf dengan background biru</p>
         <p class="fancy">paragraf dengan gaya fancy</p>
         <h3 class="fancy">heading dengan fancy induk</h3>
         
+        <!--id selector-->
+        <!--div-->
+        <div>
+            <p id="special">merupakan konten di dalam div yg diberi id special</p>
+        </div>
+        <div>
+            <p>ini konten di dalam div biasa</p>
+        </div>
+        <!--span-->
+        <span>
+            <p id="untukspan">merupakan konten di dalam <Strong>span</Strong></p>
+        </span> 
+        <span>
+            <p>ini konten di dalam span biasa</p>
+        </span>
+
+        <!--atribut selector-->
+        <ul>
+            <li><a href="#internal">Internal</a></li>
+            <li><a href="http://example.com">Example link</a></li>
+            <li><a href="#InSensitive">Isensitive Internal link</a></li>
+            <li><a href="example.org">Example.org link</a></li>
+
+        </ul>
+
         <ul>
             <li>Sejarah</li>
             <img src="image/history.jpg" alt="sejarah"height="400px">
