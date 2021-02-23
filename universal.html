@@ -19,14 +19,22 @@
             /*>*/
             /*span>p{background-color: cornflowerblue;}
             /*space*/
-            div p{color: pink;}
+            /*div p{background-color: pink;}
             */
+
+            blockquote::before,
+            blockquote::after{
+                content:'"';
+                font-size: 24px;
+                font-style: italic;
+                font-weight: bold;
+            }
 
         </style>
     </head>
     <body>
         <h1>ini judul</h1>
-        <p>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</p>
+        <blockquote>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</blockquote>
         <p>aye aye</p>
         <p lang="en-us"> This is an English paragraph contains en-us value of lang attribute, so this text will be green and
             italic</p>
