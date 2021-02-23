@@ -12,7 +12,11 @@
             }
 
             /*+*/
-            h1+p{color: green;}
+            /*h1+p{color: green;}
+            /*~*/
+            /*h1~p{color:brown;}
+            /*>*/
+            span>p{background-color: cornflowerblue;}
 
 
         </style>
@@ -30,6 +34,14 @@
         <p class="warning">Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna merah</p>
         <div id="content">
             <p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibungkus dalam border yang memiliki padding 20px</p>
+            <p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibungkus dalam border yang memiliki padding 20px</p>
         </div>
+
+        <span>
+            <p>ini paragraf 1 yang ada di dalam elemen span</p>
+            <p>ini paragraf 2 yang ada di dalam elemen span</p>
+            <section><p>ini paragraf di dalam span tp bukan anak elemen secara langsung</p></section>
+            <p>ini paragraf 3 yang ada di dalam elemen span</p>
+        </span>
     </body>
 </html>
