@@ -3,7 +3,7 @@
     <head>
         <title>Judul dokumen</title>
         <style>
-            *{color:cadetblue}
+            /**{color:cadetblue}*/  
             *[lang^=en] {font-style: italic;}
             *.warning {color: red;}
             *#content{
@@ -11,10 +11,16 @@
                 padding: 20px;
             }
 
+            /*+*/
+            h1+p{color: green;}
+
+
         </style>
     </head>
     <body>
+        <h1>ini judul</h1>
         <p>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</p>
+        <p>aye aye</p>
         <p lang="en-us"> This is an English paragraph contains en-us value of lang attribute, so this text will be green and
             italic</p>
 
