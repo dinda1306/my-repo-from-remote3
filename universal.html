@@ -3,7 +3,7 @@
     <head>
         <title>Judul dokumen</title>
         <style>
-            
+            @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500&display=swap');
             
             /**{color:cadetblue}*/  
             *[lang^=en] {font-style: italic;}
@@ -48,11 +48,11 @@
                 font-variant: small-caps;
             }
             */
-            p{
+            /*p{
                 font: italic 100 16px sans-serif;
                 line-height: 2;
                 }
-                
+            */  
             div.pertama{   
                 text-indent: 2em;
                 text-align: center;
@@ -68,6 +68,24 @@
             .dekorasi{text-decoration: underline;}
             .transformen{text-transform: capitalize;}
             .spasiletter{letter-spacing: 4px;}
+            .bayangan{
+                text-shadow: 1px 1px 0px cornflowerblue ;
+                background-color: darkgrey;
+                color: black;
+            }
+            .bayangan2{
+                text-shadow: -1px -1px 2px  cornflowerblue;
+                background-color: darkgrey;
+                color: black;
+            }
+
+            @font-face {
+                font-family: "Dicoding Font";
+                src: url('FILE-FONT.TTF');
+            }
+            p {
+                font-family: "Quicksand";
+        }
             
             
 
@@ -102,6 +120,9 @@
         <p class="dekorasi">ini adalah paragraf yg dikasih underline</p>
         <p class="transformen">ini adalah paragraf yg dicapitalize</p>
         <p class="spasiletter">ini adalah paragraf yg di kasih spasenya gede</p>
+        <p class="bayangan">ini adalah paragraf yg dikasih shadow</p>
+
+        <p class="bayangan2">ini adalah paragraf yg dikasih shadow</p>
 
         <h2>pseudo class selector</h2>
         <p><a href="https://www.dicoding.com/academies/123/tutorials/4216?from=4215">This is a link</a></p>
