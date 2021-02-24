@@ -37,38 +37,64 @@
                 font-style: italic;
                 font-weight: bold;
             }
-            body{
+            /*body{
                 font-family: sans-serif;
                 font-size: 16px;
                 }
-            h1{font-size: 40px;}
+            h1{
+                font-size: 40px;
+                font-weight: 900;
+                font-style: oblique;
+                font-variant: small-caps;
+            }
+            */
+            p{
+                font: italic 100 16px sans-serif;
+                line-height: 2;
+                }
+                
+            div.pertama{   
+                text-indent: 2em;
+                text-align: center;
+            }
+            div.kedua{
+                text-indent: 25%;
+                text-align: right;
+                }
+            div.ketiga{
+                text-indent: -35px;
+                text-align: left;
+                }
             
             
 
         </style>
     </head>
     <body>
-        <h1>ini judul</h1>
-        <blockquote>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</blockquote>
-        <p>aye aye</p>
-        <p lang="en-us"> This is an English paragraph contains en-us value of lang attribute, so this text will be green and
-            italic</p>
+        <div class="ketiga">
+            <h1>ini judul</h1>
+            <blockquote>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</blockquote>
+            <p>aye aye</p>
+            <p lang="en-us"> This is an English paragraph contains en-us value of lang attribute, so this text will be green and italic</p>
+        </div>
 
         <h1>Ini merupakan header biasa</h1>
         <h1 lang="en-us">This is an english header</h1>
 
         <p class="warning">Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna merah</p>
-        <div id="content">
+        <div id="content" class="kedua">
             <p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibungkus dalam border yang memiliki padding 20px</p>
             <p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibungkus dalam border yang memiliki padding 20px</p>
         </div>
 
-        <span>
-            <p>ini paragraf 1 yang ada di dalam elemen span</p>
-            <p>ini paragraf 2 yang ada di dalam elemen span</p>
-            <section><p>ini paragraf di dalam span tp bukan anak elemen secara langsung</p></section>
-            <p>ini paragraf 3 yang ada di dalam elemen span</p>
-        </span>
+        <div class="pertama">
+            <span>
+              <p>ini paragraf 1 yang ada di dalam elemen span</p>
+                <p>ini paragraf 2 yang ada di dalam elemen span</p>
+                <section><p>ini paragraf di dalam span tp bukan anak elemen secara langsung</p></section>
+                <p>ini paragraf 3 yang ada di dalam elemen span</p>
+            </span>
+        </div>
 
         <h2>pseudo class selector</h2>
         <p><a href="https://www.dicoding.com/academies/123/tutorials/4216?from=4215">This is a link</a></p>
