@@ -7,6 +7,7 @@
             
             body{
                 font-family: "Quicksand";
+                
             }
             /**{color:cadetblue}*/  
             *[lang^=en] {font-style: italic;}
@@ -82,15 +83,31 @@
                 color: black;
             }
 
-           .kapasitas{
-               background-color: burlywood;
-               opacity: 0.5;;
-           }
-           .kapasitas2{
+            .kapasitas{
+                background-color: burlywood;
+                opacity: 0.5;;
+            }
+            .kapasitas2{
                 color: rgba(78,231,23, 0.5);
                 color: hsla(104, 82%, 50%, 0.5);
-           }
+            }
            
+            #content{
+                background-color: rgb(200,200,200);
+                padding: 20px 15px;
+            }
+
+            #content > h2 {
+                background-color: #4c5450;
+                padding: 20px;
+                color: white;
+            }   
+            
+            #content >h3 {
+                background-color: #60d0a8;
+                padding: 15px;
+                color: white;
+            }
             
 
         </style>
@@ -121,17 +138,27 @@
             </span>
         </div>
 
-        <p class="dekorasi">ini adalah paragraf yg dikasih underline</p>
-        <p class="transformen">ini adalah paragraf yg dicapitalize</p>
-        <p class="spasiletter">ini adalah paragraf yg di kasih spasenya gede</p>
-        <p class="bayangan">ini adalah paragraf yg dikasih shadow</p>
 
-        <p class="bayangan2">ini adalah paragraf yg dikasih shadow</p>
+        <div>
+            <p class="dekorasi">ini adalah paragraf yg dikasih underline</p>
+            <p class="transformen">ini adalah paragraf yg dicapitalize</p>
+            <p class="spasiletter">ini adalah paragraf yg di kasih spasenya gede</p>
+            <p class="bayangan">ini adalah paragraf yg dikasih shadow</p>
 
-        <h2>pseudo class selector</h2>
-        <p><a href="https://www.dicoding.com/academies/123/tutorials/4216?from=4215">This is a link</a></p>
+            <p class="bayangan2">ini adalah paragraf yg dikasih shadow</p>
 
-        <p class="kapasitas">ini pragragraf yg bacgorundnya dikasih transparan</p>
-        <p class="kapasitas2">ini pargraf yg transpara mode beda</p>
+            <h2>pseudo class selector</h2>
+            <p><a href="https://www.dicoding.com/academies/123/tutorials/4216?from=4215">This is a link</a></p>
+            <h3>Dolor sit amet lorem ipsum</h3>
+
+            <p class="kapasitas">ini pragragraf yg bacgorundnya dikasih transparan</p>
+            <p class="kapasitas2">ini pargraf yg transpara mode beda</p>
+        </div>
+
+        <div id= "content">
+            <h2>Lorem Ipsum</h2>
+            <h3>Dolor sit amet lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora.</p>
+        </div>
     </body>
 </html>
