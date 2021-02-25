@@ -37,11 +37,22 @@ nav a:hover{
     text-align: center;
     color: white;
 }
+nav{
+    background-color: #00a2c6;
 
+    padding: 5px;
+}
 nav li{
     display: inline;
     list-style: none;
     margin-right: 20px;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
 }
 footer{
     padding: 20px;
