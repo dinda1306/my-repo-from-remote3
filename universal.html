@@ -108,8 +108,51 @@
                 padding: 15px;
                 color: white;
             }
-            
+            .box{
+                height: 300px;
+                width: 300px;
+                background-color: rgb(132, 63, 150)
+            }
+            .dalembox{
+                height: 75%;
+                width: 75%;
+                background-color: #FBDD1C;
+            }
 
+            .konteks{
+                max-width: 800px;
+                height: 400px;
+                margin: 0 auto;
+                background-color: cornflowerblue;
+            }
+            
+            .dalemkonteks{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .overfloww{
+                height: 200px;
+                width: 200px;
+                background-color: lightgreen;
+                overflow: visible;
+            }
+
+            blockquote{
+                height:200px;
+                width: 200px;
+                background-color: pink;
+                border: 10px solid cornflowerblue;
+                padding: 20px;
+            }
+
+            .kontentt{
+                box-sizing: content-box;
+            }
+
+            .kyahh{
+                box-sizing: border-box;
+            }
         </style>
     </head>
     <body>
@@ -160,5 +203,24 @@
             <h3>Dolor sit amet lorem ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora.</p>
         </div>
+
+        <div class="box">
+            <p class="dalembox">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora.</p>
+        </div>
+
+        <div class="konteks">
+            <p class="dalemkonteks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius explicabo fuga iusto magni minus odit praesentium, quasi quisquam quos repellat suscipit tempora tenetur? Assumenda cum laborum officiis quos ratione.</p>
+        </div>
+
+        <p class="overfloww">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora.</p>
+        <div class="kontent">
+        <blockquote class="kontentt">
+        </blockquote>
+        <p>Elemen menerapkan <code>box-sizing: content-box;</code> Ukuran box secara keseluruhan akan menjadi 260px lebar, 260px tinggi; 260 = 200 + 20 + 20 + 10 + 10</p>       
+        
+        <blockquote class="kyahh">
+        </blockquote>
+        <p>Elemen menerapkan <code>box-sizing: border-box;</code> Ukuran box akan tetap 200px lebar, 200px tinggi meskipun menerapkan padding dan border</p>
+
     </body>
 </html>
